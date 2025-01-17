@@ -1,0 +1,16 @@
+As the dataset is relatively imbalanced I will try to supplement with synthetic data.
+However, as it could also be argued that the great imbalance represent real world the synthetic data will be tested against just using the data as is.
+Furthermore, the number of synthetic data points added will be treated as a hyperparameter, which can the be fine tuned in two-level cross validation.
+
+Modelwise, I will compare a random forrest with an ANN.
+For the random forrest I will fintune the following parameters:
+- n_estimators
+- max_depth
+- min_samples_split
+- min_samples_leaf
+
+For the ANN I will finetune the following parameters:
+- Number of hidden layers
+- Neurons per layer
+- Dropout rate
+- Learning rate
